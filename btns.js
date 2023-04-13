@@ -54,8 +54,8 @@ const nicknameInput = document.getElementById('nick');
 nicknameInput.addEventListener('input', () => {
     if (nicknameInput.value.length == 3) {
         confirmUp.classList.remove('hide');
+        confirmDw.classList.add('hide');
     }
-
 });
 
 confirmArea.addEventListener('click', () => {
