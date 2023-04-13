@@ -92,6 +92,7 @@ img {
 
   .bottom-1 {
     background-image: url("./img/PNL_Background.png");
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
