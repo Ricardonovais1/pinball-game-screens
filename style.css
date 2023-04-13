@@ -21,7 +21,9 @@ img {
   touch-action: none;
 }
 
-
+.no-touch {
+  touch-action: none;
+}
 
 /* ============== ESTILO GERAL DAS DIVS ================ */
 
