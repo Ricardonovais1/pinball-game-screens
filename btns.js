@@ -49,6 +49,14 @@ areaPurpleRight.addEventListener('click', () => {
 const confirmUp = document.getElementById('conf-up');
 const confirmDw = document.getElementById('conf-dw');
 const confirmArea = document.querySelector('.confirm-area');
+const nicknameInput = document.getElementById('nick');
+
+nicknameInput.addEventListener('input', () => {
+    if (nicknameInput.value.length == 3) {
+        confirmUp.classList.remove('hide');
+    }
+
+});
 
 confirmArea.addEventListener('click', () => {
     confirmUp.classList.add('hide');
