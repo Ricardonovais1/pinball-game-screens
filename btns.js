@@ -1,17 +1,20 @@
 // Tela 1 - Pinball
 // Botão verde:
 
-const greenBtnUp = './img/BTN_Launch-UP.png';
-const greenBtnDw = './img/BTN_Launch-DW.png';
+const greenBtnUp = document.getElementById('green-up');
+const greenBtnDw = document.getElementById('green-dw');
 const areaGreen = document.querySelector('.area-green');
-const greenBtn = document.getElementById('green-btn');
 
-areaGreen.addEventListener('touchstart', () => {
-    greenBtn.style.backgroundImage = `url(${greenBtnUp})`
+areaGreen.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    greenBtnUp.classList.add('hide');
+    greenBtnDw.classList.remove('hide');
 });
 
-areaGreen.addEventListener('touchend', () => {
-    greenBtn.style.backgroundImage = `url(${greenBtnDw})`
+areaGreen.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    greenBtnUp.classList.remove('hide');
+    greenBtnDw.classList.add('hide');
 });
 
 // areaGreen.addEventListener('click', () => {
@@ -29,6 +32,18 @@ const purpleLeftUp = document.getElementById('left-up');
 const purpleLeftDw = document.getElementById('left-dw');
 const areaPurpleLeft = document.querySelector('.area-purple-left');
 
+areaPurpleLeft.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    purpleLeftUp.classList.add('hide');
+    purpleLeftDw.classList.remove('hide');
+});
+
+areaPurpleLeft.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    purpleLeftUp.classList.remove('hide');
+    purpleLeftDw.classList.add('hide');
+});
+
 // areaPurpleLeft.addEventListener('click', () => {
 //     purpleLeftUp.classList.toggle('hide');
 //     purpleLeftDw.classList.toggle('hide');
@@ -43,6 +58,18 @@ const areaPurpleLeft = document.querySelector('.area-purple-left');
 const purpleRightUp = document.getElementById('right-up');
 const purpleRightDw = document.getElementById('right-dw');
 const areaPurpleRight = document.querySelector('.area-purple-right');
+
+areaPurpleRight.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    purpleRightUp.classList.add('hide');
+    purpleRightDw.classList.remove('hide');
+});
+
+areaPurpleRight.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    purpleRightUp.classList.remove('hide');
+    purpleRightDw.classList.add('hide');
+});
 
 // areaPurpleRight.addEventListener('click', () => {
 //     purpleRightUp.classList.toggle('hide');
