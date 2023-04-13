@@ -165,16 +165,6 @@ img {
 
   }
 
-  /* .ranking-container {
-    height: 3.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ranking {
-    height: 100%;
-  } */
-
   .confirm {
     height: 40%;
     margin-top: 2.5rem;
@@ -192,7 +182,6 @@ img {
   /* ==== Div 3 ==== */
 
   .div-3 {
-    /* z-index: 2; */
     background-image: url(./img/PNL_BarraSuperior.png);
     background-repeat: no-repeat;
     background-size: cover;
