@@ -41,6 +41,7 @@ img {
 
 .top {
   background-image: url("./img/PNL_BarraSuperior.png");
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
