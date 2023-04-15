@@ -45,12 +45,12 @@ img {
   justify-content: center;
   align-items: center;
   height: 25vh;
-  z-index: 0; 
+  z-index: 1; 
 }
 
 .logo {
-  /* height: 15%; */
-  height: 5vh;
+  height: 15%;
+  /* height: 5vh; */
 }
 
 .hide {
